@@ -1,0 +1,94 @@
+.hero_section{
+    max-width: 1530px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video{
+        width: 100%;
+    }
+    .hero_container{
+        width: 700px;
+        height: 180px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            .second_item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                    h1{
+                        font-size: 1.6rem;
+                        color: #fff;
+                    }
+                    @media (max-width:900px) {
+                        h1{
+                            font-size: 1rem;
+                        }
+                    }
+                    @media (max-width:500px) {
+                        h1{
+                            font-size: 0.6rem;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        width: 140px;
+                        height: 50px;
+                        border-radius: 2px;
+                        background-color: #000;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        margin-top: 3rem;
+                        &:hover{
+                            background-color: #fff;
+                            color: #000;
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+                    @media (max-width:900px) {
+                        a{
+                            width: 120px;
+                            height: 40px;
+                            font-size: 16px;
+                        }
+                    }
+                    @media (max-width:500px) {
+                        a{
+                            width: 80px;
+                            height: 30px;
+                            font-size: 10px;
+                        }
+                    }
+            }
+    }
+    @media (max-width:900px) {
+        .hero_container{
+            width: 500px;
+            height: 140px;
+        }
+    }
+    @media (max-width:500px) {
+        .hero_container{
+            width: 300px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media (max-width:300px) {
+        .hero_container{
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
